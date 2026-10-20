@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Минутка — случайный навык</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>⏳ Минутка</h1></header>
+<main>
+<section id="screen-time">
+<h2>Сколько у тебя времени?</h2>
+<div class="times">
+<button class="time-btn" data-min="5" data-max="10">до 10
+минут</button>
+<button class="time-btn" data-min="11" data-max="30">10–30
+минут</button>
+<button class="time-btn" data-min="31" data-max="60">30–60
+минут</button>
+</div>
+<button id="surprise" class="link">🎲 Удиви меня</button>
+</section>
+<section id="screen-card" hidden>
+<article class="card" id="card">
+<h2 id="c-title"></h2>
+<p id="c-desc"></p>
+<p class="meta"><span id="c-time"></span> · <span id="c-level">
+</span></p>
+<h3>Понадобится</h3>
+<ul id="c-mats"></ul>
+</article>
+<p id="empty" hidden></p>
+<div class="row">
+<button id="start">Начать</button>
+<button id="another" class="secondary">Другой навык</button>
+</div>
+<button id="back" class="link">← Выбрать время</button>
+</section>
+<section id="screen-steps" hidden>
+<div class="progress"><div id="bar"></div></div>
+<p id="step-num"></p>
+<p id="step-text" class="step"></p>
+<div class="row">
+<button id="prev" class="secondary">← Назад</button>
+<button id="next">Далее →</button>
+</div>
+</section>
+<section id="screen-done" hidden>
+<h2>🎉 Готово!</h2>
+<p id="done-text"></p>
+<div class="row">
+<button id="again">Повторить инструкцию</button>
+<button id="new" class="secondary">Другой навык</button>
+</div>
+</section>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
